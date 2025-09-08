@@ -9,6 +9,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 100vh;
 }
 
 .wrapper {
@@ -19,7 +21,6 @@ body {
 	width: 100%;
 	max-width: 1152px;
 	margin: 0 auto;
-	border: solid 1px white;
 	gap: 20px;
 	padding: 20px;
 }
@@ -37,7 +38,7 @@ body {
 .card__item {
 	background-color: #9d0208;
 	width: 78px;
-	height: 78px;
+	min-height: 78px;
 	border-radius: 4px;
 }
 
@@ -55,8 +56,7 @@ body {
 
 .card__item__two {
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-	height: 120px;
-	/*align-items: stretch;*/
+	align-items: stretch;
 	justify-content: center;
 }
 
@@ -67,6 +67,7 @@ body {
 
 .four {
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .item__four__right {
@@ -79,12 +80,13 @@ body {
 	font-size: 12px;
 	justify-content: space-evenly;
 	align-items: baseline;
+	justify-content: center;
 }
 
 .item__five__left,
 .item__five__right {
-	height: 120px;
 	padding: 20px 10px;
+	align-self: stretch;
 }
 
 .item__five__middle {
@@ -97,13 +99,16 @@ body {
 }
 
 .six {
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+}
+
+.item__six__left,
+.item__six__right {
+	width: 78px;
 }
 
 .item__six__middle {
-	/*
-  flex-grow: 2;
-  */
+	flex: 2;
 	width: 158px;
 }
