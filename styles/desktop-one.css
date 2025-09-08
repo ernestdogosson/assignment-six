@@ -78,21 +78,22 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	justify-content: space-evenly;
-	align-content: baseline;
+	align-items: baseline;
 }
 
 .item__five__left,
 .item__five__right {
 	height: 120px;
-	/*align-items: stretch;*/
 	padding: 20px 10px;
-	text-align: center;
 }
 
 .item__five__middle {
 	height: 64px;
 	padding: 10px;
-	text-align: center;
+}
+
+.item__five__middle p {
+	margin-top: 0;
 }
 
 .six {
